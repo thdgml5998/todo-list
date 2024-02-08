@@ -1,0 +1,43 @@
+.insert_list ul li {
+    height: 40px;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    box-shadow: 1px 1px 2px #999999;
+    background-color: #fff;
+    clear: both;
+    margin-bottom: 10px;
+}
+.insert_list ul li span {
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.insert_list ul li .but_wrap {
+    float: right;
+    height: 100%;
+}
+.insert_list ul li button {
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #fff;
+    height: 100%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.insert_list ul li span::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transition: width 0.2s ease-in-out;
+    background-color: red;
+}
+
+.insert_list ul li.completed span::after {
+    width: 100%;
+}
